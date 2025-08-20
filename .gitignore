@@ -30,8 +30,10 @@ lerna-debug.log*
 *.sln
 *.sw?
 
-# uploaded ads (keep the folder but not the files)
+# uploaded ads (keep the folder and sample files)
 /ads/*
 !/ads/.gitkeep
+!/ads/textql-*.html
+!/ads/anduril-*.html
 # Local Netlify folder
 .netlify
