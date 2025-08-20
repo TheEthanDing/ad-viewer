@@ -33,3 +33,5 @@ lerna-debug.log*
 # uploaded ads (keep the folder but not the files)
 /ads/*
 !/ads/.gitkeep
+# Local Netlify folder
+.netlify
