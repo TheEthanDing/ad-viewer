@@ -1,0 +1,8 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- TQ Icon -->
+  <rect x="5" y="10" width="40" height="40" rx="8" fill="#1fb2a6"/>
+  <text x="25" y="37" font-family="Inter, sans-serif" font-size="20" font-weight="700" text-anchor="middle" fill="white">TQ</text>
+  
+  <!-- TextQL Text -->
+  <text x="55" y="37" font-family="Inter, sans-serif" font-size="28" font-weight="600" fill="#0a1f1b">TextQL</text>
+</svg>
