@@ -1,0 +1,58 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="white"/>
+  
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="50" fill="#FAFAFA"/>
+  <line x1="0" y1="50" x2="1200" y2="50" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Terminal prompt -->
+  <text x="24" y="32" font-family="monospace" font-size="16" fill="#666666">$</text>
+  <text x="44" y="32" font-family="monospace" font-size="16" fill="#000000">ad-viewer</text>
+  
+  <!-- Sidebar -->
+  <rect x="0" y="50" width="280" height="580" fill="#FAFAFA"/>
+  <line x1="280" y1="50" x2="280" y2="630" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Sidebar header -->
+  <rect x="0" y="50" width="280" height="45" fill="#FAFAFA"/>
+  <line x1="0" y1="95" x2="280" y2="95" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="24" y="77" font-family="monospace" font-size="12" fill="#999999" letter-spacing="1">FILES</text>
+  
+  <!-- File items -->
+  <rect x="0" y="115" width="280" height="40" fill="#000000"/>
+  <rect x="24" y="127" width="28" height="16" rx="2" fill="#333333"/>
+  <text x="28" y="137" font-family="monospace" font-size="10" fill="#FFFFFF">HTM</text>
+  <text x="64" y="137" font-family="monospace" font-size="12" fill="#FFFFFF">anduril-uk.html</text>
+  
+  <rect x="24" y="167" width="28" height="16" rx="2" fill="#E0E0E0"/>
+  <text x="28" y="177" font-family="monospace" font-size="10" fill="#666666">HTM</text>
+  <text x="64" y="177" font-family="monospace" font-size="12" fill="#000000">textql-analytics.html</text>
+  
+  <rect x="24" y="207" width="28" height="16" rx="2" fill="#E0E0E0"/>
+  <text x="28" y="217" font-family="monospace" font-size="10" fill="#666666">IMG</text>
+  <text x="64" y="217" font-family="monospace" font-size="12" fill="#000000">banner-campaign.png</text>
+  
+  <!-- Preview area header -->
+  <rect x="280" y="50" width="920" height="45" fill="#FAFAFA"/>
+  <line x1="280" y1="95" x2="1200" y2="95" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="304" y="77" font-family="monospace" font-size="14" font-weight="500" fill="#000000">anduril-uk.html</text>
+  <text x="1120" y="77" font-family="monospace" font-size="12" fill="#666666">[html]</text>
+  
+  <!-- Mock ad preview -->
+  <rect x="500" y="250" width="480" height="200" rx="12" fill="url(#gradient)"/>
+  <text x="740" y="360" font-family="Arial" font-size="48" font-weight="300" fill="white" text-anchor="middle">AD PREVIEW</text>
+  
+  <!-- Brand badge -->
+  <rect x="950" y="560" width="220" height="50" rx="8" fill="white" stroke="#E0E0E0" stroke-width="1"/>
+  <text x="970" y="585" font-family="monospace" font-size="18" font-weight="600" fill="#000000">Ad Gallery Viewer</text>
+  <text x="970" y="600" font-family="monospace" font-size="11" fill="#666666">Terminal UI for Creative Assets</text>
+  
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

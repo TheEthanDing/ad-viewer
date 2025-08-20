@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preview Generator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'SF Mono', 'Monaco', 'Courier New', monospace;
+            background: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .preview-container {
+            width: 1200px;
+            height: 630px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .header {
+            border-bottom: 1px solid #e0e0e0;
+            padding: 16px 24px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #fafafa;
+        }
+        
+        .prompt {
+            color: #666;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .cmd {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        .main-content {
+            flex: 1;
+            display: flex;
+        }
+        
+        .sidebar {
+            width: 280px;
+            border-right: 1px solid #e0e0e0;
+            background: #fafafa;
+        }
+        
+        .sidebar-header {
+            padding: 16px 24px;
+            font-size: 13px;
+            color: #999;
+            letter-spacing: 1.2px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .file-list {
+            padding: 12px 0;
+        }
+        
+        .file-item {
+            padding: 10px 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .file-item.selected {
+            background: #000;
+            color: #fff;
+        }
+        
+        .file-type {
+            font-size: 11px;
+            padding: 3px 6px;
+            background: #e0e0e0;
+            color: #666;
+            border-radius: 2px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        .file-item.selected .file-type {
+            background: #333;
+            color: #fff;
+        }
+        
+        .preview {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .preview-header {
+            padding: 16px 24px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            justify-content: space-between;
+            background: #fafafa;
+        }
+        
+        .preview-content {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 40px;
+        }
+        
+        .mock-ad {
+            width: 400px;
+            height: 300px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: -1px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .brand {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: rgba(255,255,255,0.95);
+            padding: 12px 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        
+        .brand-text {
+            font-size: 24px;
+            font-weight: 600;
+            color: #000;
+            letter-spacing: -0.5px;
+        }
+        
+        .brand-tag {
+            font-size: 13px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="preview-container">
+        <div class="header">
+            <span class="prompt">$</span>
+            <span class="cmd">ad-viewer</span>
+        </div>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="sidebar-header">FILES</div>
+                <div class="file-list">
+                    <div class="file-item">
+                        <span class="file-type">htm</span>
+                        <span>textql-llm-analytics.html</span>
+                    </div>
+                    <div class="file-item selected">
+                        <span class="file-type">htm</span>
+                        <span>anduril-uk.html</span>
+                    </div>
+                    <div class="file-item">
+                        <span class="file-type">img</span>
+                        <span>banner-campaign.png</span>
+                    </div>
+                    <div class="file-item">
+                        <span class="file-type">jsx</span>
+                        <span>interactive-demo.jsx</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="preview">
+                <div class="preview-header">
+                    <span>anduril-uk.html</span>
+                    <span style="color: #666; font-size: 12px;">[html]</span>
+                </div>
+                <div class="preview-content">
+                    <div class="mock-ad">
+                        AD PREVIEW
+                    </div>
+                    <div class="brand">
+                        <div>
+                            <div class="brand-text">Ad Gallery Viewer</div>
+                            <div class="brand-tag">Terminal UI for Creative Assets</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
