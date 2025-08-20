@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextQL Health Ad</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background: #2a2a2a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .ad-container {
+            background: white;
+            width: 600px;
+            height: 800px;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+        
+        .header {
+            position: absolute;
+            top: 45px;
+            left: 50px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 32px;
+            font-weight: 300;
+            letter-spacing: -0.5px;
+        }
+        
+        .health-icon {
+            width: 36px;
+            height: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #CF142B;
+            border-radius: 3px;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        .top-right-info {
+            position: absolute;
+            top: 45px;
+            right: 50px;
+            text-align: right;
+            font-size: 10px;
+            color: #999;
+            line-height: 1.4;
+            letter-spacing: 0.5px;
+        }
+        
+        .main-text {
+            position: absolute;
+            top: 34%;
+            left: 50px;
+            right: 50px;
+            transform: translateY(-50%);
+        }
+        
+        .protect {
+            font-size: 110px;
+            font-weight: 300;
+            letter-spacing: -3px;
+            line-height: 0.85;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        
+        .patient {
+            font-size: 90px;
+            font-weight: 300;
+            letter-spacing: -2px;
+            line-height: 0.85;
+            margin-bottom: 15px;
+            text-align: right;
+        }
+        
+        .outcomes {
+            font-size: 90px;
+            font-weight: 300;
+            letter-spacing: -2px;
+            line-height: 0.9;
+            text-align: right;
+        }
+        
+        .middle-text-container {
+            position: absolute;
+            width: 100%;
+            bottom: 315px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+        
+        .middle-text {
+            font-size: 14px;
+            letter-spacing: 2.5px;
+            color: #CF142B;
+            font-weight: 500;
+        }
+        
+        .bottom-left-info {
+            position: absolute;
+            bottom: 255px;
+            left: 50px;
+            font-size: 8px;
+            color: #999;
+            line-height: 1.3;
+            letter-spacing: 0.3px;
+        }
+        
+        .textql-logo-container {
+            position: absolute;
+            bottom: 255px;
+            right: 50px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .logo-icon {
+            width: 30px;
+            height: 30px;
+            background: #1fb2a6;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: white;
+            font-size: 14px;
+        }
+        
+        .logo-text {
+            font-size: 22px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+        
+        .flag-container {
+            position: absolute;
+            bottom: 45px;
+            left: 50px;
+            right: 50px;
+            height: 170px;
+        }
+        
+        .stylized-flag {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* Red section - top left */
+        .flag-red-section {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 35%;
+            background: #CF142B;
+            clip-path: polygon(0 0, 100% 0, 65% 100%, 0 100%);
+        }
+        
+        /* Blue section - bottom */
+        .flag-blue-section {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 65%;
+            height: 65%;
+            background: #00247D;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+        }
+        
+        /* White diagonal stripe - wider */
+        .flag-white-diagonal {
+            position: absolute;
+            background: white;
+            width: 150%;
+            height: 40px;
+            top: 48%;
+            left: -25%;
+            transform: rotate(-28deg);
+            transform-origin: center;
+        }
+        
+        /* Red diagonal stripe - centered in white */
+        .flag-red-diagonal {
+            position: absolute;
+            background: #CF142B;
+            width: 150%;
+            height: 18px;
+            top: 51%;
+            left: -25%;
+            transform: rotate(-28deg);
+            transform-origin: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="ad-container">
+        <div class="header">
+            <span>TextQL</span>
+            <div class="health-icon">+</div>
+            <span>Health</span>
+        </div>
+        
+        <div class="top-right-info">
+            TEXTQL TECHNOLOGIES<br>
+            EST. 2022<br>
+            <br>
+            AUTONOMOUS<br>
+            INTELLIGENCE
+        </div>
+        
+        <div class="main-text">
+            <div class="protect">Protect</div>
+            <div class="patient">Patient</div>
+            <div class="outcomes">Outcomes</div>
+        </div>
+        
+        <div class="middle-text-container">
+            <span class="middle-text">TEXTQL HEALTH</span>
+            <span class="middle-text">STANDS</span>
+            <span class="middle-text">READY</span>
+        </div>
+        
+        <div class="bottom-left-info">
+            DO | ENHANCE CLINICAL WORKFLOWS<br>
+            DO | EMPOWER HEALTHCARE TEAMS<br>
+            DO | IMPROVE PATIENT CARE
+        </div>
+        
+        <div class="textql-logo-container">
+            <div class="logo-icon">TQ</div>
+            <span class="logo-text">TEXTQL</span>
+        </div>
+        
+        <div class="flag-container">
+            <div class="stylized-flag">
+                <div class="flag-red-section"></div>
+                <div class="flag-blue-section"></div>
+                <div class="flag-white-diagonal"></div>
+                <div class="flag-red-diagonal"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
