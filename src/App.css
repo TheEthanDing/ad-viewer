@@ -60,6 +60,11 @@
   font-size: 11px;
 }
 
+.info-text {
+  color: #666;
+  font-size: 11px;
+}
+
 .content {
   flex: 1;
   display: flex;
