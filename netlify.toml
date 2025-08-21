@@ -2,7 +2,9 @@
   command = "npm run build"
   publish = "build"
 
+# Serve static files first, then SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+  force = false
